@@ -12,50 +12,50 @@ namespace DesignPatterns.Builder
     class MainApp
     {
         /// Entry point into console application.
-        public static void Main()
-        {
-            VehicleBuilder builder;
+        //public static void Main()
+        //{
+        //    VehicleBuilder builder;
 
-            // Create shop with vehicle builders
+        //    // Create shop with vehicle builders
 
-            Shop shop = new Shop();
+        //    Shop shop = new Shop();
 
-            // Construct and display vehicles
+        //    // Construct and display vehicles
 
-            builder = new ScooterBuilder();
-            shop.Construct(builder);
-            builder.Vehicle.Show();
+        //    builder = new ScooterBuilder();
+        //    shop.Construct(builder);
+        //    builder.Vehicle.Show();
 
-            builder = new CarBuilder();
-            shop.Construct(builder);
-            builder.Vehicle.Show();
+        //    builder = new CarBuilder();
+        //    shop.Construct(builder);
+        //    builder.Vehicle.Show();
 
-            builder = new MotorCycleBuilder();
-            shop.Construct(builder);
-            builder.Vehicle.Show();
+        //    builder = new MotorCycleBuilder();
+        //    shop.Construct(builder);
+        //    builder.Vehicle.Show();
 
-            // Wait for user
+        //    // Wait for user
 
-            Console.ReadKey();
+        //    Console.ReadKey();
 
-            //The classes and objects participating in this pattern are:
+        //    //The classes and objects participating in this pattern are:
 
-            //Builder(VehicleBuilder)
-            //specifies an abstract interface for creating parts of a Product object
+        //    //Builder(VehicleBuilder)
+        //    //specifies an abstract interface for creating parts of a Product object
             
-            //ConcreteBuilder(MotorCycleBuilder, CarBuilder, ScooterBuilder)
-            //constructs and assembles parts of the product by implementing the Builder interface
-            //defines and keeps track of the representation it creates
-            //provides an interface for retrieving the product
+        //    //ConcreteBuilder(MotorCycleBuilder, CarBuilder, ScooterBuilder)
+        //    //constructs and assembles parts of the product by implementing the Builder interface
+        //    //defines and keeps track of the representation it creates
+        //    //provides an interface for retrieving the product
             
-            //Director(Shop)
-            //constructs an object using the Builder interface
+        //    //Director(Shop)
+        //    //constructs an object using the Builder interface
             
-            //Product  (Vehicle)
-            //represents the complex object under construction.ConcreteBuilder builds the product's internal representation and defines the process by which it's assembled
-            //includes classes that define the constituent parts, including interfaces for assembling the parts into the final result
+        //    //Product  (Vehicle)
+        //    //represents the complex object under construction.ConcreteBuilder builds the product's internal representation and defines the process by which it's assembled
+        //    //includes classes that define the constituent parts, including interfaces for assembling the parts into the final result
 
 
-}
+        //}
     }
 }
